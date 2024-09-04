@@ -1,5 +1,3 @@
-// app.js
-
 // Function to add product to localStorage
 function addToCart(product) {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -87,3 +85,10 @@ document.addEventListener('DOMContentLoaded', () => {
         displayCartItems();
     }
 });
+
+window.onload = function() {
+    const interval = setInterval(function() {
+        var currentTime = new Date();
+        document.getElementById("datetime").innerHTML = currentTime;
+    }, 1000);
+}
