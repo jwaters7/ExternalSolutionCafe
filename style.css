@@ -1,0 +1,42 @@
+.timecard {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+#timeDescriptor {
+	color: white;
+	text-align: right;
+}
+
+#datetime {
+	color: white;
+	text-align: right;
+}
+
+.card {
+	position: absolute;
+	border-radius: 8px;
+	left: 0px;
+	background: rgba(255, 255, 255, 0.2);
+	width: 25%;
+}
+
+.card_right {
+	position: absolute;
+	border-radius: 8px;
+	right: 0px;
+	background: rgba(255, 255, 255, 0.2);
+	width: 25%;
+}
+
+.add-to-cart {
+	background-color: grey;
+	border-radius: 4px;
+	color: white;
+	transition-duration: 0.4s;
+}
+
+.add-to-cart:hover {
+	background-color: steelblue;
+}
