@@ -49,50 +49,98 @@
   </select>
  -->
 
-<header>
+    <header>
+
         <h1 style="color:white;">Product List</h1>
+
         <!-- Cart Preview Section -->
         <div id="cart-preview">
             <h2 style="color:white;">Cart Summary</h2>
             <p style="color:white;" id="cart-count">Items in Cart: 0</p>
             <p style="color:white;" id="cart-total">Total: $0.00</p>
             <a href="cart.html">View/Manage Cart</a>
-        </div>
+        </div>        
     </header>
+
+    <div class="timecard">
+        <div class="card-body">
+            <h5 id="timeDescriptor">Current Date & Time:</h5>
+            <p id="datetime"></p>
+        </div>
+    </div>
+
 
     <main id="products">
         <h2 style="color:white";>Pancakes</h2>
-        <div class="product" data-id="PC.Reg" data-name="Pancakes, Regular" data-price="14.00">
-            <h6 style="color:white;">Pancakes, Regular</h6>
-            <p style="color:white;">Price: $14.00</p>
-            <button class="add-to-cart">Add to Cart</button>
+
+<!-- Pancakes card begin -->
+    <div class="card">
+        <div class="card-body">
+            <div class="product" data-id="PC.Reg" data-name="Pancakes, Regular" data-price="14.00">
+                <h6 style="color:white;">Pancakes, Regular</h6>
+                <p style="color:white;">Price: $14.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="PC.GF" data-name="Pancakes, Gluten Free" data-price="14.00">
+               <h6 style="color:white;">Pancakes, Gluten Free</h6>
+               <p style="color:white;">Price: $14.00</p>
+               <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="PC.XIC" data-name="Pancakes, no Ice Cream" data-price="12.00">
+               <h6 style="color:white;">Pancakes, no Ice Cream</h6>
+               <p style="color:white;">Price: $12.00</p>
+               <button class="add-to-cart">Add to Cart</button>
+            </div>
+          <div class="product" data-id="PC.GF.XIC" data-name="Pancakes, Gluten Free, no Ice Creams" data-price="12.00">
+              <h6 style="color:white;">Pancakes, Gluten Free, No Ice Cream</h6>
+              <p style="color:white;">Price: $12.00</p>
+             <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="product" data-id="PC.XS" data-name="Pancakes, no Strawberries" data-price="13.00">
+                <h6 style="color:white;">Pancakes, no Strawberries</h6>
+                <p style="color:white;">Price: $13.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="Pancakes, Gluten Free, no Strawberries" data-name="PC.GF.XS" data-price="13.00">
+                <h6 style="color:white;">Pancakes, Gluten Free, no Strawberries</h6>
+                <p style="color:white;">Price: $13.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+           </div>
         </div>
-        <div class="product" data-id="PC.GF" data-name="Pancakes, Gluten Free" data-price="14.00">
-            <h6 style="color:white;">Pancakes, Gluten Free</h6>
-            <p style="color:white;">Price: $14.00</p>
-            <button class="add-to-cart">Add to Cart</button>
+    </div>
+<!-- Pancakes card end -->
+
+<!-- ---------------- -->
+
+<!-- Toasted sandwich card begin -->
+    <div class="card_right">
+        <div class="card-body">
+            <div class="product" data-id="TS.HC" data-name="Toasted Sandwich - Ham & Cheese" data-price="12.00">
+                <h6 style="color:white;">Toasted Sandwich - Ham & Cheese</h6>
+                <p style="color:white;">Price: $12.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="TS.BE" data-name="Toasted Sandwich - Bacon & Egg" data-price="14.00">
+               <h6 style="color:white;">Toasted Sandwich - Bacon & Egg</h6>
+               <p style="color:white;">Price: $13.00</p>
+               <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="TS.SBCB" data-name="Toasted Sandwich - Sausage, Bacon, Cheese, & BBQ Sauce" data-price="12.00">
+               <h6 style="color:white;">Toasted Sandwich - Sausage, Bacon, Cheese, & BBQ Sauce</h6>
+               <p style="color:white;">Price: $14.00</p>
+               <button class="add-to-cart">Add to Cart</button>
+            </div>
+          <div class="product" data-id="S.BLT" data-name="Sandwich - Bacon, Lettuce, & Tomato" data-price="12.00">
+              <h6 style="color:white;">Sandwich - Bacon, Lettuce, & Tomato</h6>
+              <p style="color:white;">Price: $11.00</p>
+             <button class="add-to-cart">Add to Cart</button>
+          </div>
         </div>
-        <div class="product" data-id="PC.XIC" data-name="Pancakes, no Ice Cream" data-price="12.00">
-            <h6 style="color:white;">Pancakes, no Ice Cream</h6>
-            <p style="color:white;">Price: $12.00</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="PC.GF.XIC" data-name="Pancakes, Gluten Free, no Ice Creams" data-price="12.00">
-            <h6 style="color:white;">Pancakes, Gluten Free, No Ice Cream</h6>
-            <p style="color:white;">Price: $12.00</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="PC.XS" data-name="Pancakes, no Strawberries" data-price="13.00">
-            <h6 style="color:white;">Pancakes, no Strawberries</h6>
-            <p style="color:white;">Price: $13.00</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product" data-id="Pancakes, Gluten Free, no Strawberries" data-name="PC.GF.XS" data-price="13.00">
-            <h6 style="color:white;">Pancakes, Gluten Free, no Strawberries</h6>
-            <p style="color:white;">Price: $13.00</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
+    </div>
+<!-- Toasted sandwich card end -->
+
         <!-- Add more products as needed -->
+
     </main>
 
 <script src="script.js"></script>
