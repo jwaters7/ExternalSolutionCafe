@@ -28,12 +28,31 @@
 	color: white;
 }
 
+#breakfastspecialslabel {
+	color: white;
+}
+
+#breakfastlabel {
+	color: white;
+	text-align: center;
+}
+
+#drinkslabel {
+	color: white;
+	text-align: center;
+}
+
+#lunchlabel {
+	color: white;
+	text-align: center;
+}
+
 .card {
 	position: absolute;
 	border-radius: 8px;
 	left: 0px;
 	background: rgba(255, 255, 255, 0.2);
-	width: 25%;
+	width: 30%;
 }
 
 .card_right {
@@ -41,14 +60,20 @@
 	border-radius: 8px;
 	right: 0px;
 	background: rgba(255, 255, 255, 0.2);
-	width: 25%;
+	width: 30%;
 }
 
 .card_middle {
 	margin: auto;
 	border-radius: 8px;
 	background: rgba(255, 255, 255, 0.2);
-	width: 25%;
+	width: 30%;
+}
+
+.productcard {
+	padding: 5px;
+	border-radius: 8px;
+	background: rgba(0, 0, 0, 0.35);
 }
 
 .add-to-cart {
