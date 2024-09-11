@@ -3,9 +3,10 @@
 <head>
 
 <style>
+/*Sets the background image to a repeating, royalty-free image of a cafe*/
     body {
         background-image: url("pixabay-cafe-7454951_1280.jpg");
-        background-repeat: no-repeat;
+        background-repeat: repeat;
         background-size: cover;
     }
 </style>
@@ -30,8 +31,6 @@
 
 <body>
 
-
-
     <header>
 
         <h1 style="color:white;">Product List</h1>
@@ -47,12 +46,14 @@
 
     <div class="timecard">
 
+        <!-- Shows the current date and time in the html page, the opening hours of the cafe, and whether it is open given that information, using elements gotten from the javascript file -->
         <div class="card-body">
             <h5 id="timeDescriptor">Current Date & Time:</h5>
             <p id="datetime"></p>
-            <p><b>Opening Hours:</b></p>
+            <p><b>Opening Hours (123 Fake St.):</b></p>
             <p>Monday-Friday: 8:00 - 15:00</p>
             <p>Saturday-Sunday: 7:00 - 14:00</p>
+            <p id="openOrNot"></p>
 
         </div>
     </div>
@@ -61,136 +62,334 @@
     <main id="products">
 
 
-<!-- Pancakes card begin -->
-    <div class="card">
-        <div class="card-body">
-            <h2 id="pancakelabel">Pancakes</h2>
+<!-- Breakfast Menu -->
 
-            <div class="product" data-id="PC.Reg" data-name="Pancakes, Regular" data-price="14.00">
-                <h6 style="color:white;">Pancakes, Regular</h6>
-                <p style="color:white;">Price: $14.00</p>
-                <button class="add-to-cart">Add to Cart</button>
+<div class="cardfullscreen">
+    <div class="card-body">
+        <h2 id="breakfastlabel">Breakfast Menu</h2>
+
+        <div class="card">
+            <div class="card-body">
+                <h3 id="breakfastspecialslabel">Specials</h3>
+
+                    <div class="productcard">
+                        <div class="product-card-body">
+
+                            <div class="product" data-id="BB" data-name="Big Breakfast" data-price="20.00">
+                                <h6 style="color:white;">Big Breakfast</h6>
+                                <p style="color:white;"></p>
+                                <p style="color:white;">Price: $20.00</p>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+
+                        </div>
+                    </div>
+
             </div>
+        </div>
 
-            <div class="product" data-id="PC.GF" data-name="Pancakes, Gluten Free" data-price="14.00">
-               <h6 style="color:white;">Pancakes, Gluten Free</h6>
-               <p style="color:white;">Price: $14.00</p>
-               <button class="add-to-cart">Add to Cart</button>
+
+            <!-- Pancakes card begin -->
+        <div class="card_right">
+            <div class="card-body">
+                <h3 id="pancakelabel">Pancakes</h3>
+
+                <div class="productcard">
+                    <div class="product-card-body">
+
+                        <div class="product" data-id="PC.Reg" data-name="Pancakes, Regular" data-price="14.00">
+                            <h6 style="color:white;">Pancakes, Regular</h6>
+                            <p style="color:white";>Light, fluffy pancakes, served with maple syrup, strawberries, and ice cream.</p>
+                            <p style="color: white">Allergen Information: Contains dairy, egg, and gluten.</p>
+                            <p style="color:white;">Price: $14.00</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <br></br>
+
+                <div class="productcard">
+                    <div class="product-card-body">
+
+                       <div class="product" data-id="PC.GF" data-name="Pancakes, Gluten Free" data-price="14.00">
+                            <h6 style="color:white;">Pancakes, Gluten Free</h6>
+                            <p style="color:white";>Light, fluffy gluten free pancakes, served with maple syrup, strawberries, and ice cream.</p>
+                            <p style="color: white">Allergen Information: Contains dairy and egg.</p>
+                            <p style="color:white;">Price: $14.00</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <br></br>
+
+                <div class="productcard">
+                    <div class="product-card-body">
+
+                        <div class="product" data-id="PC.XIC" data-name="Pancakes, no Ice Cream" data-price="12.00">
+                            <h6 style="color:white;">Pancakes, no Ice Cream</h6>
+                            <p style="color:white";>Light, fluffy pancakes, served with maple syrup and strawberries.</p>
+                            <p style="color: white">Allergen Information: Contains dairy, egg, and gluten.</p>
+                            <p style="color:white;">Price: $12.00</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <br></br>
+
+                <div class="productcard">
+                    <div class="product-card-body">
+
+                        <div class="product" data-id="PC.GF.XIC" data-name="Pancakes, Gluten Free, no Ice Creams" data-price="12.00">
+                            <h6 style="color:white;">Pancakes, Gluten Free, No Ice Cream</h6>
+                            <p style="color:white";>Light, fluffy gluten free pancakes, served with maple syrup and strawberries.</p>
+                            <p style="color: white">Allergen Information: Contains dairy and egg.</p>
+                            <p style="color:white;">Price: $12.00</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <br></br>
+
+                <div class="productcard">
+                    <div class="product-card-body">
+
+                        <div class="product" data-id="PC.XS" data-name="Pancakes, no Strawberries" data-price="13.00">
+                            <h6 style="color:white;">Pancakes, no Strawberries</h6>
+                            <p style="color:white";>Light, fluffy pancakes, served with maple syrup and ice cream.</p>
+                            <p style="color: white">Allergen Information: Contains dairy, egg, and gluten.</p>
+                            <p style="color:white;">Price: $13.00</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <br></br>
+
+                <div class="productcard">
+                    <div class="product-card-body">
+
+                        <div class="product" data-id="Pancakes, Gluten Free, no Strawberries" data-name="PC.GF.XS" data-price="13.00">
+                            <h6 style="color:white;">Pancakes, Gluten Free, no Strawberries</h6>
+                            <p style="color:white";>Light, fluffy gluten free pancakes, served with maple syrup and ice cream.</p>
+                            <p style="color: white">Allergen Information: Contains dairy and egg.</p>
+                            <p style="color:white;">Price: $13.00</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
+        </div>
+        <!-- Pancakes card end -->
 
-            <div class="product" data-id="PC.XIC" data-name="Pancakes, no Ice Cream" data-price="12.00">
-               <h6 style="color:white;">Pancakes, no Ice Cream</h6>
-               <p style="color:white;">Price: $12.00</p>
-               <button class="add-to-cart">Add to Cart</button>
+        <!-- ---------------- -->
+
+    <!-- ---------- -->
+
+        <!-- Eggs card start -->
+
+        <div class="card_middle">
+            <div class="card-body">
+                <h3 id="egglabel">Eggs</h3>
+
+                <div class="productcard">
+                    <div class="product-card-body">
+
+                        <div class="product" data-id="E.F.T" data-name="Fried Eggs on Toast" data-price="12.00">
+                            <h6 style="color:white;">Fried Eggs on Toast</h6>
+                            <p style="color:white";>Gooey fried eggs served on buttered toast with salt, pepper, and herbs.</p>
+                            <p style="color: white">Allergen Information: Contains dairy, egg, and gluten.</p>
+                            <p style="color:white;">Price: $12.00</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <br></br>
+
+                <div class="productcard">
+                    <div class="product-card-body">                    
+                        <div class="product" data-id="E.P.T" data-name="Poached Eggs on Toast" data-price="12.00">
+                            <h6 style="color:white;">Poached Eggs on Toast</h6>
+                            <p style="color:white";>Gooey poached eggs served on buttered toast with salt, pepper, and herbs.</p>
+                            <p style="color: white">Allergen Information: Contains dairy, egg, and gluten.</p>
+                            <p style="color:white;">Price: $12.00</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>       
+
+                    </div>
+                </div>
+
+                <br></br>
+
+                <div class="productcard">
+                    <div class="product-card-body"> 
+
+                        <div class="product" data-id="E.S.T" data-name="Scrambled Eggs on Toast" data-price="12.00">
+                            <h6 style="color:white;">Scrambled Eggs on Toast</h6>
+                            <p style="color:white";>Fluffy scrambled eggs served on buttered toast with salt, pepper, and herbs.</p>
+                            <p style="color: white">Allergen Information: Contains dairy, egg, and gluten.</p>
+                            <p style="color:white;">Price: $12.00</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <br></br>
+
+                <div class="productcard">
+                    <div class="product-card-body">
+
+                        <div class="product" data-id="E.F.S" data-name="Fried Eggs on Sourdough" data-price="12.00">
+                            <h6 style="color:white;">Fried Eggs on Sourdough</h6>
+                            <p style="color:white";>Gooey fried eggs served on buttered sourdough with salt, pepper, and herbs.</p>
+                            <p style="color: white">Allergen Information: Contains dairy, egg, and gluten.</p>
+                            <p style="color:white;">Price: $12.00</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <br></br>
+
+                <div class="productcard">
+                    <div class="product-card-body">
+
+                        <div class="product" data-id="E.P.S" data-name="Poached Eggs on Sourdough" data-price="12.00">
+                            <h6 style="color:white;">Poached Eggs on Sourdough</h6>
+                            <p style="color:white";>Gooey poached eggs served on buttered sourdough with salt, pepper, and herbs.</p>
+                            <p style="color: white">Allergen Information: Contains dairy, egg, and gluten.</p>
+                            <p style="color:white;">Price: $12.00</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <br></br>
+
+                <div class="productcard">
+                    <div class="product-card-body">
+
+                        <div class="product" data-id="E.S.S" data-name="Scrambled Eggs on Sourdough" data-price="12.00">
+                            <h6 style="color:white;">Scrambled Eggs on Sourdough</h6>
+                            <p style="color:white";>Fluffy scrambled eggs served on buttered sourdough with salt, pepper, and herbs.</p>
+                            <p style="color: white">Allergen Information: Contains dairy, egg, and gluten.</p>
+                            <p style="color:white;">Price: $12.00</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
+        </div>
 
-          <div class="product" data-id="PC.GF.XIC" data-name="Pancakes, Gluten Free, no Ice Creams" data-price="12.00">
-              <h6 style="color:white;">Pancakes, Gluten Free, No Ice Cream</h6>
-              <p style="color:white;">Price: $12.00</p>
-             <button class="add-to-cart">Add to Cart</button>
-          </div>
-
-          <div class="product" data-id="PC.XS" data-name="Pancakes, no Strawberries" data-price="13.00">
-                <h6 style="color:white;">Pancakes, no Strawberries</h6>
-                <p style="color:white;">Price: $13.00</p>
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
-
-            <div class="product" data-id="Pancakes, Gluten Free, no Strawberries" data-name="PC.GF.XS" data-price="13.00">
-                <h6 style="color:white;">Pancakes, Gluten Free, no Strawberries</h6>
-                <p style="color:white;">Price: $13.00</p>
-                <button class="add-to-cart">Add to Cart</button>
-           </div>
+            <!-- Egg card end -->
 
         </div>
     </div>
-<!-- Pancakes card end -->
-
-<!-- ---------------- -->
 
 
-<!-- Sandwich card begin -->
 
-    <div class="card_right">
-        <div class="card-body">
-            <h2 id="sandwichlabel">Sandwiches</h2>
 
-            <div class="product" data-id="TS.HC" data-name="Toasted Sandwich - Ham & Cheese" data-price="12.00">
-                <h6 style="color:white;">Toasted Sandwich - Ham & Cheese</h6>
-                <p style="color:white;">Price: $12.00</p>
-                <button class="add-to-cart">Add to Cart</button>
+
+<div class="cardfullscreen">
+    <div class="card-body">
+        <h2 id="lunchlabel">Lunch Menu</h2>
+
+    <!-- Sandwich card begin -->
+
+        <div class="card_right">
+            <div class="card-body">
+                <h3 id="sandwichlabel">Sandwiches</h3>
+
+                    <div class="productcard">
+                        <div class="product-card-body">
+
+                            <div class="product" data-id="TS.HC" data-name="Toasted Sandwich - Ham & Cheese" data-price="12.00">
+                                <h6 style="color:white;">Toasted Sandwich - Ham & Cheese</h6>
+                                <p style="color:white;">Price: $12.00</p>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                <br></br>
+
+                    <div class="productcard">
+                        <div class="product-card-body">
+
+                            <div class="product" data-id="TS.BE" data-name="Toasted Sandwich - Bacon & Egg" data-price="14.00">
+                               <h6 style="color:white;">Toasted Sandwich - Bacon & Egg</h6>
+                               <p style="color:white;">Price: $13.00</p>
+                               <button class="add-to-cart">Add to Cart</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <br></br>
+
+                <div class="productcard">
+                    <div class="product-card-body">
+
+                        <div class="product" data-id="TS.SBCB" data-name="Toasted Sandwich - Sausage, Bacon, Cheese, & BBQ Sauce" data-price="12.00">
+                           <h6 style="color:white;">Toasted Sandwich - Sausage, Bacon, Cheese, & BBQ Sauce</h6>
+                           <p style="color:white;">Price: $14.00</p>
+                           <button class="add-to-cart">Add to Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <br></br>
+
+                <div class="productcard">
+                    <div class="product-card-body">
+
+                      <div class="product" data-id="S.BLT" data-name="Sandwich - Bacon, Lettuce, & Tomato" data-price="12.00">
+                          <h6 style="color:white;">Sandwich - Bacon, Lettuce, & Tomato</h6>
+                          <p style="color:white;">Price: $11.00</p>
+                         <button class="add-to-cart">Add to Cart</button>
+                      </div>
+
+                    </div>
+                </div>
+
             </div>
-
-            <div class="product" data-id="TS.BE" data-name="Toasted Sandwich - Bacon & Egg" data-price="14.00">
-               <h6 style="color:white;">Toasted Sandwich - Bacon & Egg</h6>
-               <p style="color:white;">Price: $13.00</p>
-               <button class="add-to-cart">Add to Cart</button>
-            </div>
-
-            <div class="product" data-id="TS.SBCB" data-name="Toasted Sandwich - Sausage, Bacon, Cheese, & BBQ Sauce" data-price="12.00">
-               <h6 style="color:white;">Toasted Sandwich - Sausage, Bacon, Cheese, & BBQ Sauce</h6>
-               <p style="color:white;">Price: $14.00</p>
-               <button class="add-to-cart">Add to Cart</button>
-            </div>
-
-          <div class="product" data-id="S.BLT" data-name="Sandwich - Bacon, Lettuce, & Tomato" data-price="12.00">
-              <h6 style="color:white;">Sandwich - Bacon, Lettuce, & Tomato</h6>
-              <p style="color:white;">Price: $11.00</p>
-             <button class="add-to-cart">Add to Cart</button>
-          </div>
-
         </div>
+
+    <!-- Sandwich card end -->
+
     </div>
-
-<!-- Sandwich card end -->
-
-
-<!-- Eggs card start -->
-
-    <div class="card_middle">
-        <div class="card-body">
-            <h2 id="egglabel">Eggs</h2>
-
-            <div class="product" data-id="E.F.T" data-name="Fried Eggs on Toast" data-price="12.00">
-                <h6 style="color:white;">Fried Eggs on Toast</h6>
-                <p style="color:white;">Price: $12.00</p>
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
-
-            <div class="product" data-id="E.P.T" data-name="Poached Eggs on Toast" data-price="12.00">
-                <h6 style="color:white;">Poached Eggs on Toast</h6>
-                <p style="color:white;">Price: $12.00</p>
-                <button class="add-to-cart">Add to Cart</button>
-            </div>            
-
-            <div class="product" data-id="E.S.T" data-name="Scrambled Eggs on Toast" data-price="12.00">
-                <h6 style="color:white;">Scrambled Eggs on Toast</h6>
-                <p style="color:white;">Price: $12.00</p>
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
-
-            <div class="product" data-id="E.F.S" data-name="Fried Eggs on Sourdough" data-price="12.00">
-                <h6 style="color:white;">Fried Eggs on Sourdough</h6>
-                <p style="color:white;">Price: $12.00</p>
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
-
-            <div class="product" data-id="E.P.S" data-name="Poached Eggs on Sourdough" data-price="12.00">
-                <h6 style="color:white;">Poached Eggs on Sourdough</h6>
-                <p style="color:white;">Price: $12.00</p>
-                <button class="add-to-cart">Add to Cart</button>
-            </div>            
-
-            <div class="product" data-id="E.S.S" data-name="Scrambled Eggs on Sourdough" data-price="12.00">
-                <h6 style="color:white;">Scrambled Eggs on Sourdough</h6>
-                <p style="color:white;">Price: $12.00</p>
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
-
-        </div>
-    </div>
+</div>
 
         <!-- Add more products as needed -->
+
+
+
+<div class="cardfullscreen">
+    <div class="card-body">
+        <h2 id="drinkslabel">Drinks Menu</h2>
+        
+    </div>
+</div>
+
 
     </main>
 
