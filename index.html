@@ -31,6 +31,8 @@
 
 <body>
 
+<!-- TODO: Make a table booking system. No use ordering the food if there's no guarantee you'll get to eat it in-house. Cafes usually don't do takeout. -->
+
     <header>
 
         <h1 style="color:white;">Product List</h1>
@@ -40,7 +42,7 @@
             <h2 style="color:white;">Cart Summary</h2>
             <p style="color:white;" id="cart-count">Items in Cart: 0</p>
             <p style="color:white;" id="cart-total">Total: $0.00</p>
-            <a href="cart.html">View/Manage Cart</a>
+            <a href="cart.html" id="tocart">View/Manage Cart</a>
         </div>        
     </header>
 
@@ -53,7 +55,8 @@
             <p><b>Opening Hours (123 Fake St.):</b></p>
             <p>Monday-Friday: 8:00 - 15:00</p>
             <p>Saturday-Sunday: 7:00 - 14:00</p>
-            <p id="openOrNot"></p>
+            <b><p id="openOrNot"></p></b>
+            <!-- TODO: Find a different way to make the above text prominent -->
 
         </div>
     </div>
@@ -387,6 +390,19 @@
     <div class="card-body">
         <h2 id="drinkslabel">Drinks Menu</h2>
         
+    </div>
+</div>
+
+
+
+<div class="cardfullscreen">
+    <div class="card-body">
+        <h2 id="subslabel">Substitutions</h2>
+
+            <p class="sub">All substitutions are free of charge</p>
+            <h6 class="sub">Soy Milk (Allergen(s) Removed: Dairy)</h6>
+            <h6 class="sub">Dairy Free Butter (Allergen(s) Removed: Dairy)</h6>
+
     </div>
 </div>
 
