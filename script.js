@@ -36,8 +36,13 @@ function displayCartItems() {
         const itemElement = document.createElement('div');
         itemElement.className = 'cart-item';
         itemElement.innerHTML = `
-            <p>${item.name} - $${item.price}</p>
-            <button class="remove-from-cart" onclick="removeFromCart(${index})">Remove</button>
+            <div class="checkoutcard" style="width: 20%">
+                <div class="checkoutcardbody" style="background: rgba(255, 255, 255, 0.3)">
+                        <p style="color: white">${item.name} - $${item.price}</p>
+                        <button class="remove-from-cart" onclick="removeFromCart(${index})">Remove ${item.name}</button>
+                        <br></br>
+                </div>
+            </div>
         `;
         cartItemsContainer.appendChild(itemElement);
         total += parseFloat(item.price);
@@ -88,27 +93,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //Displays the current time in the index.html document every 1000ms (1 second)
 window.onload = function() {
-    const interval = setInterval(function() {
-        var currentTime = new Date();
-        document.getElementById("datetime").innerHTML = currentTime;
-        //Checks the time for the day and hour, to determine whether the cafe is open.
-        currentTime.getHours();
-        currentTime.getDay();
-        //Checks to see whether the cafe is open on weekdays
-        if (currentTime.getDay() > 1-5) {
-            if (currentTime.getHours() > 8-15) {
-                var openCheck = "The cafe is currently open, come on in!";
+    if (window.location.pathname.endsWith("index.html")) {
+        const interval = setInterval(function() {
+            var currentTime = new Date();
+            document.getElementById("datetime").innerHTML = currentTime;
+            //Checks the time for the day and hour, to determine whether the cafe is open.
+            currentTime.getHours();
+            currentTime.getDay();
+            //Checks to see whether the cafe is open on weekdays
+            if (currentTime.getDay() > 1-5) {
+                if (currentTime.getHours() > 8-14) {
+                    var openCheck = "The cafe is currently open, come on in!";
+                } else {
+                    var openCheck = "The cafe is currently closed, please try again later";
+                }
             } else {
-                var openCheck = "The cafe is currently closed, please try again later";
+            //Checks to see whether the cafe is open on weekends
+                if (currentTime.getHours() > 7-13) {
+                    var openCheck = "The cafe is currently open, come on in!";
+                } else {
+                    var openCheck = "The cafe is currently closed, please try again later";
+                }
             }
-        } else {
-        //Checks to see whether the cafe is open on weekends
-            if (currentTime.getHours() > 7-14) {
-                var openCheck = "The cafe is currently open, come on in!";
-            } else {
-                var openCheck = "The cafe is currently closed, please try again later";
-            }
-        }
-        document.getElementById("openOrNot").innerHTML = openCheck;
-    }, 1000);
+            document.getElementById("openOrNot").innerHTML = openCheck;
+        }, 1000);
+    }
 }
