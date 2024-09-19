@@ -47,6 +47,11 @@
 	text-align: center;
 }
 
+#subslabel {
+	color: white;
+	text-align: center;
+}
+
 .card {
 	position: absolute;
 	border-radius: 8px;
@@ -85,4 +90,13 @@
 
 .add-to-cart:hover {
 	background-color: steelblue;
+}
+
+#tocart {
+	color: lightblue;
+}
+
+.sub {
+	color: white;
+	text-align: center;
 }
