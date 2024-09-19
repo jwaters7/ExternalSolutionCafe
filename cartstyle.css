@@ -1,0 +1,15 @@
+#total-price {
+	color: white;
+}
+
+#backtomenu {
+	color: lightblue;
+}
+
+#tablePlacement {
+	color: white;
+}
+
+#placeOrder:hover {
+	background-color: steelblue;
+}
