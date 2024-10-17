@@ -20,16 +20,32 @@
 	color: white;
 }
 
-#sandwichlabel {
-	color: white;
-}
-
 #egglabel {
 	color: white;
 }
 
 #breakfastspecialslabel {
 	color: white;
+}
+
+#sandwichlabel {
+	color: white;
+	text-align: center;
+}
+
+#fridgedrinkslabel {
+	color: white;
+	text-align: center;
+}
+
+#burgerlabel {
+	color: white;
+	text-align: center;
+}
+
+#frieslabel {
+	color: white;
+	text-align: center;
 }
 
 #breakfastlabel {
@@ -48,6 +64,16 @@
 }
 
 #subslabel {
+	color: white;
+	text-align: center;
+}
+
+#hotdrinkslabel {
+	color: white;
+	text-align: center;
+}
+
+#colddrinkslabel {
 	color: white;
 	text-align: center;
 }
