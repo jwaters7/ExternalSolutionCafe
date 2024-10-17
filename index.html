@@ -21,7 +21,7 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<title>ADPGX</title>
+<title>XYZ Cafe: Online Ordering System</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -31,11 +31,8 @@
 
 <body>
 
-<!-- TODO: Make a table booking system. No use ordering the food if there's no guarantee you'll get to eat it in-house. Cafes usually don't do takeout. -->
 
     <header>
-
-        <h1 style="color:white;">Product List</h1>
 
         <!-- Cart Preview Section -->
         <div id="cart-preview">
@@ -43,6 +40,7 @@
             <p style="color:white;" id="cart-count">Items in Cart: 0</p>
             <p style="color:white;" id="cart-total">Total: $0.00</p>
             <a href="cart.html" id="tocart">View/Manage Cart</a>
+            <h2 style="color:white;">Product List:</h2>
         </div>        
     </header>
 
@@ -80,13 +78,48 @@
 
                             <div class="product" data-id="BB" data-name="Big Breakfast" data-price="20.00">
                                 <h6 style="color:white;">Big Breakfast</h6>
-                                <p style="color:white;"></p>
+                                <p style="color:white;">A plate of sausages, bacon, eggs, and hash browns, served with buttered toast.</p>
+                                <p style="color:white;">Allergen Information: Contains dairy, egg, and gluten.</p>
                                 <p style="color:white;">Price: $20.00</p>
                                 <button class="add-to-cart">Add to Cart</button>
                             </div>
 
                         </div>
                     </div>
+
+                    <br></br>
+
+                    <div class="productcard">
+                        <div class="product-card-body">
+
+                            <div class="product" data-id="MLP" data-name="Mega Loaded Pancakes" data-price="20.00">
+                                <h6 style="color:white;">Mega Loaded Pancakes</h6>
+                                <p style="color:white;">Light, fluffy pancakes served with maple syrup, bacon, strawberries, and a choice of ice cream flavour (vanilla/strawberry/chocolate).</p>
+                                <p style="color:white;">Allergen Information: Contains dairy, egg, and gluten.</p>
+                                <p style="color:white;">Price: $18.00</p>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <br></br>
+
+                    <div class="productcard">
+                        <div class="product-card-body">
+
+                            <div class="product" data-id="TBE" data-name="The Big Egg" data-price="18.00">
+                                <h6 style="color:white;">The Big Egg</h6>
+                                <p style="color:white;">A large serving of eggs your way with choice of regular toast or dourdough, served with hash browns and salad.</p>
+                                <p style="color:white;">Allergen Information: Contains egg and gluten.</p>
+                                <p style="color:white;">Price: $18.00</p>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <br></br>
 
             </div>
         </div>
@@ -314,7 +347,67 @@
     <div class="card-body">
         <h2 id="lunchlabel">Lunch Menu</h2>
 
+
+    <!-- Burgers card begin -->
+
+        <div class="card">
+            <div class="card-body">
+                <h3 id="burgerlabel">Burgers</h3>
+
+                    <div class="productcard">
+                        <div class="product-card-body">
+
+                            <div class="product" data-id="B.C" data-name="Chicken Burger" data-price="14.00">
+                                <h6 style="color:white;">Chicken Burger</h6>
+                                <p style="color:white;">A crispy chicken burger with cheese, bacon, lettuce, tomato, and house sauce.</p>
+                                <p style="color:white;">Allergen Information: Contains dairy and gluten.</p>
+                                <p style="color:white;">Price: $14.00</p>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                <br></br>
+
+                <div class="productcard">
+                        <div class="product-card-body">
+
+                            <div class="product" data-id="B.B" data-name="Beef Burger" data-price="14.00">
+                                <h6 style="color:white;">Beef Burger</h6>
+                                <p style="color:white;">A juicy beef burger with cheese, bacon, lettuce, caramelised onions, and house sauce.</p>
+                                <p style="color:white;">Allergen Information: Contains dairy and gluten.</p>
+                                <p style="color:white;">Price: $14.00</p>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                <br></br>
+
+                <div class="productcard">
+                        <div class="product-card-body">
+
+                            <div class="product" data-id="B.V" data-name="Vegetarian Burger" data-price="14.00">
+                                <h6 style="color:white;">Vegetarian Burger</h6>
+                                <p style="color:white;">A lentil patty burger with cheese, lettuce, and smoky house BBQ sauce.</p>
+                                <p style="color:white;">Allergen Information: Contains dairy and gluten.</p>
+                                <p style="color:white;">Price: $14.00</p>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                <br></br>
+
+            </div>
+        </div>
+
+
     <!-- Sandwich card begin -->
+
 
         <div class="card_right">
             <div class="card-body">
@@ -325,6 +418,8 @@
 
                             <div class="product" data-id="TS.HC" data-name="Toasted Sandwich - Ham & Cheese" data-price="12.00">
                                 <h6 style="color:white;">Toasted Sandwich - Ham & Cheese</h6>
+                                <p style="color:white;">A warm, crispy toasted sandwich with smoked ham and gooey cheese.</p>
+                                <p style="color:white;">Allergen Information: Contains Dairy and Gluten.</p>
                                 <p style="color:white;">Price: $12.00</p>
                                 <button class="add-to-cart">Add to Cart</button>
                             </div>
@@ -339,7 +434,9 @@
 
                             <div class="product" data-id="TS.BE" data-name="Toasted Sandwich - Bacon & Egg" data-price="14.00">
                                <h6 style="color:white;">Toasted Sandwich - Bacon & Egg</h6>
-                               <p style="color:white;">Price: $13.00</p>
+                               <p style="color:white;">A warm, crispy toasted sandwich with salty, smoky bacon and gooey fried egg.</p>
+                               <p style="color:white;">Allergen Information: Contains Egg and Gluten.</p>
+                               <p style="color:white;">Price: $14.00</p>
                                <button class="add-to-cart">Add to Cart</button>
                             </div>
 
@@ -351,9 +448,11 @@
                 <div class="productcard">
                     <div class="product-card-body">
 
-                        <div class="product" data-id="TS.SBCB" data-name="Toasted Sandwich - Sausage, Bacon, Cheese, & BBQ Sauce" data-price="12.00">
-                           <h6 style="color:white;">Toasted Sandwich - Sausage, Bacon, Cheese, & BBQ Sauce</h6>
-                           <p style="color:white;">Price: $14.00</p>
+                        <div class="product" data-id="TS.SBCB" data-name="Toasted Sandwich - Sausage, Bacon, Cheese, & BBQ Sauce" data-price="16.00">
+                            <h6 style="color:white;">Toasted Sandwich - Sausage, Bacon, Cheese, & BBQ Sauce</h6>
+                            <p style="color:white;">Price: $16.00</p>
+                            <p style="color:white;">A warm, crispy toasted sandwich with spicy sausage, salty bacon, melted cheese, and a helping of house BBQ sauce.</p>
+                            <p style="color:white;">Allergen Information: Contains Dairy and Gluten.</p>
                            <button class="add-to-cart">Add to Cart</button>
                         </div>
 
@@ -366,8 +465,10 @@
                     <div class="product-card-body">
 
                       <div class="product" data-id="S.BLT" data-name="Sandwich - Bacon, Lettuce, & Tomato" data-price="12.00">
-                          <h6 style="color:white;">Sandwich - Bacon, Lettuce, & Tomato</h6>
-                          <p style="color:white;">Price: $11.00</p>
+                            <h6 style="color:white;">Sandwich - Bacon, Lettuce, & Tomato</h6>
+                            <p style="color:white;">A cool, fresh sandwich with crispy bacon, with fresh wet lettuce and tomato.</p>
+                            <p style="color:white;">Allergen Information: Contains Gluten.</p>
+                          <p style="color:white;">Price: $12.00</p>
                          <button class="add-to-cart">Add to Cart</button>
                       </div>
 
@@ -378,6 +479,81 @@
         </div>
 
     <!-- Sandwich card end -->
+
+    <!-- ----------------- -->
+
+
+        <div class="card_middle">
+            <div class="card-body">
+                <h3 id="frieslabel">Loaded Fries</h3>
+
+                    <div class="productcard">
+                        <div class="product-card-body">
+
+                            <div class="product" data-id="F.BC" data-name="Cheese & Bacon Loaded Fries" data-price="10.00">
+                                <h6 style="color:white;">Cheese & Bacon Loaded Fries</h6>
+                                <p style="color:white;">Hot, slightly crispy fries loaded with melted cheese and salty bacon.</p>
+                                <p style="color:white;">Allergen Information: Contains dairy.</p>
+                                <p style="color:white;">Price: $10.00</p>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                <br></br>
+
+                <div class="productcard">
+                        <div class="product-card-body">
+
+                            <div class="product" data-id="F.TS" data-name="Tomato Sauce Fries" data-price="8.00">
+                                <h6 style="color:white;">Tomato Sauce Fries</h6>
+                                <p style="color:white;">Hot, crispy fries with tomato sauce and a large helping of chicken salt.</p>
+                                <p style="color:white;">Allergen Information: No common allergens present.</p>
+                                <p style="color:white;">Price: $8.00</p>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                <br></br>
+
+                <div class="productcard">
+                        <div class="product-card-body">
+
+                            <div class="product" data-id="F.B" data-name="Beefy Loaded Fries" data-price="14.00">
+                                <h6 style="color:white;">Beefy Loaded Fries</h6>
+                                <p style="color:white;">Hot, slightly crispy fries topped with well-done beef mince and a creamy garlic aoli sauce.</p>
+                                <p style="color:white;">Allergen Information: Contains dairy.</p>
+                                <p style="color:white;">Price: $14.00</p>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                <br></br>
+
+                <div class="productcard">
+                        <div class="product-card-body">
+
+                            <div class="product" data-id="F.TS" data-name="Chicken & Cheese Loaded Fries" data-price="14.00">
+                                <h6 style="color:white;">Chicken & Cheese Loaded Fries</h6>
+                                <p style="color:white;">Hot, slightly crispy fries loaded with gooey cheese and juicy chicken strips.</p>
+                                <p style="color:white;">Allergen Information: Contains Dairy.</p>
+                                <p style="color:white;">Price: $14.00</p>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                <br></br>
+
+
+            </div>
+        </div>
 
     </div>
 </div>
@@ -390,6 +566,124 @@
     <div class="card-body">
         <h2 id="drinkslabel">Drinks Menu</h2>
         
+            <div class="card">
+            <div class="card-body">
+                <h3 id="hotdrinkslabel">Hot Drinks</h3>
+
+                    <div class="productcard">
+                        <div class="product-card-body">
+
+                            <div class="product" data-id="Customisable Coffee" data-name="Customisable Coffee" data-price="8.00">
+                                <h6 style="color:white;">Customisable Coffee</h6>
+                                <p style="color:white;">Your choice of coffee, latte, cappuccino, mocha, or flat white, served with a marshmallow.</p>
+                                <p style="color:white;">Allergen Information: Contains Dairy.</p>
+                                <p style="color:white;">Price: $8.00</p>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <br></br>
+
+                    <div class="productcard">
+                        <div class="product-card-body">
+
+                            <div class="product" data-id="Hot Chocolate" data-name="Hot Chocolate" data-price="8.00">
+                                <h6 style="color:white;">Hot Chocolate</h6>
+                                <p style="color:white;">Your choice of Hot Chocolate or White Hot Chocolate, served with powdered chocolate and two marshmallows.</p>
+                                <p style="color:white;">Allergen Information: Contains Dairy.</p>
+                                <p style="color:white;">Price: $8.00</p>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+
+
+            <div class="card_right">
+            <div class="card-body">
+                <h3 id="fridgedrinkslabel">Fridge Drinks</h3>
+
+                    <div class="productcard">
+                        <div class="product-card-body">
+
+                            <div class="product" data-id="Soft Drink Can" data-name="Soft Drink Can" data-price="5.00">
+                                <h6 style="color:white;">Soft Drink Can</h6>
+                                <p style="color:white;">A small can of soft drink of your choice: Cola, Lemon, Orange, Raspberry</p>
+                                <p style="color:white;">Allergen Information: No Common Allergens</p>
+                                <p style="color:white;">Price: $5.00</p>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <br></br>
+
+                    <div class="productcard">
+                        <div class="product-card-body">
+
+                            <div class="product" data-id="Soft Drink Bottle" data-name="Soft Drink Bottle" data-price="8.00">
+                                <h6 style="color:white;">Soft Drink Bottle</h6>
+                                <p style="color:white;">A medium-sized bottle of soft drink of your choice: Cola, Lemon, Orange, Raspberry</p>
+                                <p style="color:white;">Allergen Information: No Common Allergens</p>
+                                <p style="color:white;">Price: $8.00</p>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+
+
+                <div class="card_middle">
+                <div class="card-body">
+                    <h3 id="colddrinkslabel">Cold Drinks</h3>
+
+                        <div class="productcard">
+                            <div class="product-card-body">
+
+                            <div class="product" data-id="Milkshake" data-name="Milkshake" data-price="8.00">
+                                <h6 style="color:white;">Milkshake</h6>
+                                <p style="color:white;">A tall, frothy milkshake in your choice of flavour: Chocolate, Strawberry, Caramel, Coffee, Blue Heaven.</p>
+                                <p style="color:white;">Allergen Information: Contains Dairy.</p>
+                                <p style="color:white;">Price: $8.00</p>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <br></br>
+
+                    <div class="productcard">
+                            <div class="product-card-body">
+
+                            <div class="product" data-id="Frappe" data-name="Frappe" data-price="10.00">
+                                <h6 style="color:white;">Frappe</h6>
+                                <p style="color:white;">A large frappe of your choice of flavour: Chocolate, Strawberry, Cramel, Coffee, Blue Heaven.</p>
+                                <p style="color:white;">Allergen Information: Contains Dairy.</p>
+                                <p style="color:white;">Price: $10.00</p>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+
     </div>
 </div>
 
