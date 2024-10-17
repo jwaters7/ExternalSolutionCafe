@@ -6,7 +6,7 @@ function addToCart(product) {
     updateCartPreview();
 }
 
-// Function to update the cart preview on index.html
+// Function to call said product from localStorage and update the cart preview on index.html
 function updateCartPreview() {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
     const cartCountElement = document.getElementById('cart-count');
@@ -28,6 +28,7 @@ function displayCartItems() {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
     const cartItemsContainer = document.getElementById('cart-items');
     const totalPriceContainer = document.getElementById('total-price');
+    const totalTimeContainer = document.getElementById('total-time');
 
     let total = 0;
     cartItemsContainer.innerHTML = '';
@@ -36,7 +37,7 @@ function displayCartItems() {
         const itemElement = document.createElement('div');
         itemElement.className = 'cart-item';
         itemElement.innerHTML = `
-            <div class="checkoutcard" style="width: 20%">
+            <div class="checkoutcard" style="width: 23%">
                 <div class="checkoutcardbody" style="background: rgba(255, 255, 255, 0.3)">
                         <p style="color: white">${item.name} - $${item.price}</p>
                         <button class="remove-from-cart" onclick="removeFromCart(${index})">Remove ${item.name}</button>
