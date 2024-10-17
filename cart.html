@@ -32,6 +32,8 @@
 
     <main>
 
+        <!-- A random number generator that assigns a random table for the user to sit at when they arrive at the cafe. -->
+        
         <script type="text/javascript">
             function table() {
                 var setTable = (Math.floor(Math.random()*16)+1);
@@ -49,11 +51,12 @@
 
         </script>
 
-        <p id="tablePlacement">By placing this order, you will be seated at table 0.</p>
+        <p id="tablePlacement">[If you see this text, there's an error in the code. This text should be getting replaced by a function via innerText.]</p>
         <!-- Container for displaying cart items -->
         <div id="cart-items"></div>
         <!-- Container for displaying the total price -->
-        <p id="total-price">Total: $0.00</p>
+        <p id="total-price">[If you see this text, there's an error in the code. This text should be getting replaced by a function via innerText.]</p>
+        <p id="total-time">The general wait time for orders to come out is roughly 15 minutes, but 25 minutes for orders of $50 or more. By pressing "place order", your payment method will be charged the full amount of the price listed on the page. If you are unable to make it to the cafe in this time, and your food goes to waste, you will not be refunded. Thank you for your understanding.</p>
     </main>
 
 
@@ -61,7 +64,15 @@
         <a href="index.html" id="backtomenu">Continue Shopping</a>
     </footer>
 
-    <button id="placeOrder">Place Order</button>
+    <button id="placeOrder" onclick="orderPlaced()">Place Order</button>
+
+    <script>
+    function orderPlaced() {
+        document.getElementById("cart-items").innerHTML = ""
+        document.getElementById("total-price").innerHTML = ""
+        alert("Thank you for placing your order! Your payment method has been charged and your order is being made. Thank you for purchasing from XYZ Cafe!")
+    }
+    </script>
 
     <script src="script.js"></script>
 </body>
